@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	transition: all 0.2s ease-in-out;
+}
+
+body {
+	background-image: url('../imgs/bgs/bg-dark.jpg');
+	background-size: 100% auto;
+	background-position: center top;
+}
+
+.glass {
+	background: rgba(255, 255, 255, 0.0);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-xl {
+	background: rgba(255, 255, 255, 0.03);
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
