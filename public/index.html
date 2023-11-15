@@ -14,48 +14,61 @@
 	<meta property="og:image" content="https://marianbonhomme.netlify.app/assets/imgs/pdp-nobg.png">
 	<meta property="og:url" content="https://marianbonhomme.netlify.app/">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<link rel='stylesheet' type='text/css' href='assets/styles/output.css'>
-	
+	<link rel='stylesheet' type='text/css' href='assets/styles/output.css'>	
+	<script type="text/javascript" src="assets/scripts/scroll.js"></script>
+	<script type="text/javascript" src="assets/scripts/menu.js"></script>
+	<script type="text/javascript" src="assets/scripts/navigation.js"></script>
 </head>
 
-<body class="flex flex-col items-center font-quicksand text-white px-10">
+<body class="flex flex-col items-center font-quicksand text-white px-2 sm:px-10 overflow-x-hidden">
 	
-	<header class="w-full max-w-8xl glass rounded-b-2xl flex justify-center mb-10">
+	<header class="w-full max-w-8xl glass rounded-b-2xl flex justify-center mb-10 py-2 sm:py-0 px-3 sm:px-10">
 		<div class="w-full max-w-7xl flex justify-between items-center">
-			<h1 class="font-poppins text-3xl">MARIAN BONHOMME</h1>
-			<ul class="flex justify-end">
-				<li class="cursor-pointer p-5" data-value="home">Home</li>
-				<li class="cursor-pointer p-5" data-value="about">About</li>
-				<li class="cursor-pointer p-5" data-value="skills">Skills</li>
-				<li class="cursor-pointer p-5" data-value="resume">Resume</li>
-				<li class="cursor-pointer p-5" data-value="contact">Contact</li>
+			<h1 class="font-poppins text-normal sm:text-xl lg:text-3xl">MARIAN BONHOMME</h1>
+			<ul id="nav" class="hidden sm:flex justify-end text-sm lg:text-normal">
+				<li class="cursor-pointer p-3 lg:p-5" data-value="home">Home</li>
+				<li class="cursor-pointer p-3 lg:p-5" data-value="about">About</li>
+				<li class="cursor-pointer p-3 lg:p-5" data-value="skills">Skills</li>
+				<li class="cursor-pointer p-3 lg:p-5" data-value="resume">Resume</li>
+				<li class="cursor-pointer p-3 lg:p-5" data-value="contact">Contact</li>
 			</ul>
+			<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-4">
 		</div>
 	</header>
+	<header id="menu-mobile" class="w-screen h-screen glass absolute flex justify-center items-center z-50 translate-x-full">
+		<img id="close-menu" src="assets/icons/close.svg" alt="close menu" class="absolute top-10 right-10 w-5">
+		<ul id="nav-mobile" class="text-xl">
+			<li class="flex items-center cursor-pointer p-3" data-value="home"><img src="assets/icons/home.svg" alt="home" class="w-4 mr-3">Home</li>
+			<li class="flex items-center cursor-pointer p-3" data-value="about"><img src="assets/icons/about.png" alt="home" class="w-4 mr-3">About</li>
+			<li class="flex items-center cursor-pointer p-3" data-value="skills"><img src="assets/icons/skills.png" alt="home" class="w-4 mr-3">Skills</li>
+			<li class="flex items-center cursor-pointer p-3" data-value="resume"><img src="assets/icons/resume.png" alt="home" class="w-4 mr-3">Resume</li>
+			<li class="flex items-center cursor-pointer p-3" data-value="contact"><img src="assets/icons/contact.png" alt="home" class="w-4 mr-3">Contact</li>
+		</ul>
+	</header>
 
-	<main class="w-full max-w-8xl glass rounded-xl flex flex-col items-center px-10">
+	<main class="w-full max-w-8xl glass rounded-xl flex flex-col items-center px-3 sm:px-10">
 <!-- Home -->
-		<section id="home" class="w-full max-w-7xl flex relative py-20">
-			<div class="grow flex items-center">
-				<div class="w-7/12">
-					<h2 class="text-6xl font-bold"><span class="text-9xl text-primary">H</span>ello and Welcome !</h2>
-					<p class="text-3xl font-medium mt-2 mb-5">I'm <span class="typing"></span></p>
+		<section id="home" class="w-full max-w-7xl flex relative py-10 sm:py-16 lg:py-20">
+			<div class="grow lg:flex items-center">
+				<div class="w-full lg:w-7/12 mb-10 lg:mb-0 flex sm:block flex-col items-center text-center sm:text-start">
+					<h2 class="text-4xl sm:text-5xl font-bold"><span class="text-7xl sm:text-8xl text-primary">H</span>ello and Welcome!</h2>
+					<p class="text-xl sm:text-3xl font-medium mt-2 mb-4">I'm <span class="typing"></span></p>
 					<button class="glass-xl rounded-xl flex items-center px-4 py-2">Learn More<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
 				</div>
-				<div class="w-5/12 flex justify-end">
-					<div class="w-full max-w-md glass-xl rounded-xl py-10 px-14 flex flex-col items-center">
+				<div class="w-full lg:w-5/12 flex justify-end">
+					<div class="w-full max-w-sm glass-xl rounded-xl py-5 px-6 sm:py-10 sm:px-14 flex flex-col items-center">
 						<div class="glass-xl rounded-full overflow-hidden">
-							<img src="assets/imgs/pdp-nobg.png" alt="me" class="w-28">
+							<img src="assets/imgs/pdp-nobg.png" alt="me" class="w-20 sm:w-28">
 						</div>
-						<h3 class="text-4xl font-extralight my-5">Marian Bonhomme</h3>
-						<p>Full-Stack Developer</p>
-						<p>Web Designer</p>
-						<div class="grid grid-cols-3 my-10">
-							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
-							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
-							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
+						<h3 class="text-xl sm:text-3xl font-extralight my-3 sm:my-5">Marian Bonhomme</h3>
+						<p class="text-sm">Full-Stack Developer</p>
+						<p class="text-sm">Web Designer</p>
+						<div class="grid grid-cols-3 my-5 sm:my-10">
+							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/github.png" alt="github" class="w-4 sm:w-6"></a>
+							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-4 sm:w-6"></a>
+							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-4 sm:w-6"></a>
 						</div>
-						<div class="self-start text-sm">
+						<div class="self-start text-xs sm:text-sm">
 							<div class="flex items-center mb-1">
 								<img src="assets/icons/mail.png" alt="mail" class="w-3 mr-3">
 								<span>marian.bonhomme@gmail.com</span>
@@ -74,99 +87,101 @@
 			</div>
 		</section>
 <!-- About -->
-		<section id="about" class="w-full max-w-7xl flex relative py-20">
-			<div class="w-1/3 flex items-center pr-10">
-				<img src="assets/imgs/pdp-full.png" alt="me" class="max-h-full grayscale">
+		<section id="about" class="w-full max-w-7xl lg:flex relative py-10 sm:py-16 lg:py-20">
+			<div class="hidden lg:w-1/3 lg:flex items-center pr-10">
+				<img src="assets/imgs/pdp-full.png" alt="me" class="max-h-full">
 			</div>
-			<div class="w-2/3 flex flex-col items-end">
-				<h3 class="text-5xl font-bold mb-3"><span class="text-8xl text-primary">A</span>bout Me<span class="text-7xl text-primary">...</span></h3>
-				<p class="text-end text-xl mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda est obcaecati dolores consectetur, sunt, rem illo facilis iste odit animi illum saepe ab culpa vel ut! Nesciunt earum in dolorem?</p>
-				<div class="w-full max-w-2xl flex justify-between glass-xl rounded-xl py-7 px-10">
+			<div class="w-full lg:w-2/3 flex flex-col items-end">
+				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">A</span>bout Me<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
+				<p class="text-justify sm:text-end text-normal sm:text-xl mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda est obcaecati dolores consectetur, sunt, rem illo facilis iste odit animi illum saepe ab culpa vel ut! Nesciunt earum in dolorem?</p>
+				<div class="w-full max-w-2xl sm:flex justify-between glass-xl rounded-xl py-3 px-3 sm:py-7 sm:px-10">
 					<div class="text-sm">
 						<p class="p-2"><span class="font-bold">Name : </span>Marian Bonhomme</p>
 						<p class="p-2"><span class="font-bold">Phone : </span>06 33 63 66 00</p>
 						<p class="p-2"><span class="font-bold">Adress : </span>Montpellier</p>
 						<p class="p-2"><span class="font-bold">Mail : </span>marian.bonhomme@gmail.com</p>
-						<button class="glass-xl rounded-xl flex items-center px-4 py-2 mt-3">Contact Me<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
+						<button class="hidden sm:flex max-w-fit glass-xl rounded-xl items-center px-4 py-2 mt-3">Contact Me<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
 					</div>
 					<div class="text-sm flex flex-col">
 						<p class="p-2"><span class="font-bold">Age : </span>22</p>
 						<p class="p-2"><span class="font-bold">Degree : </span>Bachelor's Full-Stack Developer</p>
 						<p class="p-2"><span class="font-bold">Experience : </span>3 Years</p>
 						<p class="p-2"><span class="font-bold">Availability Status : </span>Not Available</p>
+						<button class="flex sm:hidden max-w-fit glass-xl rounded-xl items-center px-4 py-2 mt-3">Contact Me<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
 					</div>
 				</div>
 			</div>
 		</section>
 <!-- Skills -->
-		<section id="skills" class="w-full max-w-7xl flex flex-col items-center py-20">
-			<h3 class="text-5xl font-bold mb-3"><span class="text-8xl text-primary">D</span>ev Skills<span class="text-7xl text-primary">...</span></h3>
-			<p class="max-w-5xl text-center text-xl mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque.</p>
-			<div class="grid grid-cols-3 gap-10 font-extralight">
-				<div class="glass-xl rounded-xl py-7 px-10">
+		<section id="skills" class="w-full max-w-7xl flex flex-col items-center py-10 sm:py-16 lg:py-20">
+			<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">D</span>ev Skills<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
+			<p class="max-w-5xl tetx-justify sm:text-center text-normal sm:text-xl mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque.</p>
+			<div class="max-w-sm lg:max-w-none grid grid-cols-1 lg:grid-cols-3 gap-10 font-extralight">
+				<div class="glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
 					<h4 class="text-2xl">INTEGRATION</h4>
-					<p class="text-justify mt-3 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque.</p>
+					<p class="text-justify mt-1 mb-2 sm:mt-3 sm:mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque.</p>
 					<div class="w-full flex justify-evenly items-center text-xs">
 						<div class="flex flex-col items-center">
 							<img src="assets/imgs/dev/html.svg" alt="html" class="w-12 mb-1">
-							<span class="">HTML</span>
+							<span>HTML</span>
 						</div>
 						<div class="flex flex-col items-center">
 							<img src="assets/imgs/dev/css.svg" alt="css" class="w-12 mb-1">
-							<span class="">CSS</span>
+							<span>CSS</span>
 						</div>
-						<div class="flex flex-col items-center">
+						<div class="flex flex-col items-center text-center">
 							<img src="assets/imgs/dev/tailwind.svg" alt="tailwind" class="w-12 mb-1">
-							<span class="">TAILWIND CSS</span>
+							<span>TAILWIND CSS</span>
 						</div>
 						<div class="flex flex-col items-center">
 							<img src="assets/imgs/dev/bootstrap.svg" alt="bootstrap" class="w-12 mb-1">
-							<span class="">BOOTSTRAP</span>
+							<span>BOOTSTRAP</span>
 						</div>
 					</div>
 				</div>
-				<div class="glass-xl rounded-xl py-7 px-10">
+				<div class="glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
 					<h4 class="text-2xl">FRONT-END</h4>
-					<p class="text-justify mt-3 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque. </p>
+					<p class="text-justify mt-1 mb-2 sm:mt-3 sm:mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque. </p>
 					<div class="w-full flex justify-evenly items-center text-xs">
 						<div class="flex flex-col items-center">
 							<img src="assets/imgs/dev/angular.png" alt="angular" class="w-12 mb-1">
-							<span class="">ANGULAR</span>
+							<span>ANGULAR</span>
 						</div>
 						<div class="flex flex-col items-center">
 							<img src="assets/imgs/dev/react.svg" alt="react" class="w-12 mb-1">
-							<span class="">REACT</span>
+							<span>REACT</span>
 						</div>
 					</div>
 				</div>
-				<div class="glass-xl rounded-xl py-7 px-10">
+				<div class="glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
 					<h4 class="text-2xl">BACK-END</h4>
-					<p class="text-justify mt-3 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque. </p>
+					<p class="text-justify mt-1 mb-2 sm:mt-3 sm:mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque. </p>
 					<div class="w-full flex justify-evenly items-center text-xs">
 						<div class="flex flex-col items-center">
 							<img src="assets/imgs/dev/symfony.svg" alt="symfony" class="w-12 mb-1">
-							<span class="">SYMFONY</span>
+							<span>SYMFONY</span>
 						</div>
 						<div class="flex flex-col items-center">
 							<img src="assets/imgs/dev/nodejs.svg" alt="nodejs" class="w-12 mb-1">
-							<span class="">NODEJS</span>
+							<span>NODEJS</span>
 						</div>
 						<div class="flex flex-col items-center">
 							<img src="assets/imgs/dev/mysql.svg" alt="mysql" class="w-12 mb-1">
-							<span class="">MYSQL</span>
+							<span>MYSQL</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 <!-- Resume -->
-		<section id="resume" class="w-full max-w-7xl relative py-20">
-			<h3 class="text-5xl font-bold mb-3 absolute"><span class="text-8xl text-primary">R</span>esume<span class="text-7xl text-primary">...</span></h3>
-			<div class="w-full flex flex-col relative mt-20">
+		<section id="resume" class="w-full max-w-7xl relative py-10 sm:py-16 lg:py-20">
+			<h3 class="text-4xl sm:text-5xl font-bold mb-3 lg:absolute"><span class="text-7xl sm:text-8xl text-primary">R</span>esume<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
+			<!-- tab & desktop -->
+			<div class="w-full hidden sm:flex flex-col relative lg:mt-20">
 				<div class="w-1/2 self-end flex items-center relative border-l-2 border-white">
 					<div class="absolute -left-2 h-4 w-4 rounded-full bg-white"></div>
-					<div class="text-5xl text-primary font-bold ml-3 mr-1 whitespace-nowrap">23-24</div>
-					<div class="text-sm glass-xl rounded-xl py-3 px-4">
+					<div class="text-5xl text-primary font-bold ml-3 mr-1 whitespace-nowrap absolute lg:relative -left-40 lg:left-0">23-24</div>
+					<div class="text-sm glass-xl rounded-xl py-3 px-4 ml-3 lg:ml-0">
 						<h4 class="text-xl font-bold">Full Stack Applications Developer</h4>
 						<span class="font-semibold">Montpellier</span>
 						<p class="font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
@@ -174,17 +189,17 @@
 				</div>
 				<div class="w-1/2 self-start flex items-center relative border-r-2 border-white -right-[2px]">
 					<div class="absolute -right-2 h-4 w-4 rounded-full bg-white"></div>
-					<div class="text-end text-sm glass-xl rounded-xl py-3 px-4">
+					<div class="text-end text-sm glass-xl rounded-xl py-3 px-4 mr-3 lg:mr-0">
 						<h4 class="text-xl font-bold">Front-End Developer</h4>
 						<span class="font-semibold">Nancy</span>
 						<p class="font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
 					</div>
-					<div class="text-5xl text-primary font-bold mr-3 ml-1 whitespace-nowrap">20-22</div>
+					<div class="text-5xl text-primary font-bold mr-3 ml-1 whitespace-nowrap absolute lg:relative -right-40 lg:right-0">20-22</div>
 				</div>
 				<div class="w-1/2 self-end flex items-center relative border-l-2 border-white">
 					<div class="absolute -left-2 h-4 w-4 rounded-full bg-white"></div>
-					<div class="text-5xl text-primary font-bold ml-3 mr-1 whitespace-nowrap">2019</div>
-					<div class="text-sm glass-xl rounded-xl py-3 px-4">
+					<div class="text-5xl text-primary font-bold ml-3 mr-1 whitespace-nowrap absolute lg:relative -left-40 lg:left-0">2019</div>
+					<div class="text-sm glass-xl rounded-xl py-3 px-4 ml-3 lg:ml-0">
 						<h4 class="text-xl font-bold">Military Reservist / L1 STAPS</h4>
 						<span class="font-semibold">Nancy</span>
 						<p class="font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
@@ -192,18 +207,65 @@
 				</div>
 				<div class="w-1/2 self-start flex items-center relative border-r-2 border-white -right-[2px]">
 					<div class="absolute -right-2 h-4 w-4 rounded-full bg-white"></div>
-					<div class="text-end text-sm glass-xl rounded-xl py-3 px-4">
+					<div class="text-end text-sm glass-xl rounded-xl py-3 px-4 mr-3 lg:mr-0">
 						<h4 class="text-xl font-bold">Economic and Social Baccalaureate</h4>
 						<span class="font-semibold">Toul</span>
 						<p class="font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
 					</div>
-					<div class="text-5xl text-primary font-bold mr-3 ml-1 whitespace-nowrap">2018</div>
+					<div class="text-5xl text-primary font-bold mr-3 ml-1 whitespace-nowrap absolute lg:relative -right-40 lg:right-0">2018</div>
+				</div>
+			</div>
+			<!-- mobile -->
+			<div class="w-full flex sm:hidden flex-col relative">
+				<div class="w-full self-end flex items-center relative border-l-2 border-white">
+					<div class="absolute top-4 -left-2 h-4 w-4 rounded-full bg-white"></div>
+					<div class="py-3 px-4 ml-3">
+						<div class="flex justify-between font-bold">
+							<h4>Full Stack Applications Developer</h4>
+							<p class="text-primary">2023<br>2024</p>
+						</div>
+						<span class="text-sm font-semibold">Montpellier</span>
+						<p class="text-xs font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
+					</div>
+				</div>
+				<div class="w-full self-start flex items-center relative border-l-2  border-white">
+					<div class="absolute top-4 -left-2 h-4 w-4 rounded-full bg-white"></div>
+					<div class="py-3 px-4 ml-3">
+						<div class="flex justify-between font-bold">
+							<h4>Front-End Developer</h4>
+							<p class="text-primary">2020<br>2022</p>
+						</div>
+						<span class="text-sm font-semibold">Nancy</span>
+						<p class="text-xs font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
+					</div>
+				</div>
+				<div class="w-full self-end flex items-center relative border-l-2 border-white">
+					<div class="absolute top-4 -left-2 h-4 w-4 rounded-full bg-white"></div>
+					<div class="py-3 px-4 ml-3">
+						<div class="flex justify-between font-bold">
+							<h4>Military Reservist / L1 STAPS</h4>
+							<p class="text-primary">2019</p>
+						</div>
+						<span class="text-sm font-semibold">Nancy</span>
+						<p class="text-xs font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
+					</div>
+				</div>
+				<div class="w-full self-start flex items-center relative border-l-2 border-white">
+					<div class="absolute top-4 -left-2 h-4 w-4 rounded-full bg-white"></div>
+					<div class="py-3 px-4 ml-3">
+						<div class="flex justify-between font-bold">
+							<h4>Economic and Social Baccalaureate</h4>
+							<p class="text-primary">2018</p>
+						</div>
+						<span class="text-sm font-semibold">Toul</span>
+						<p class="text-xs font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
+					</div>
 				</div>
 			</div>
 		</section>
 <!-- Contact -->
-		<section id="contact" class="w-full max-w-7xl flex relative py-20">
-			<div class="w-1/2 flex items-end">
+		<section id="contact" class="w-full max-w-7xl lg:flex relative py-10 sm:py-16 lg:py-20">
+			<div class="hidden w-1/2 lg:flex items-end">
 				<div id="contact-form" class="w-full max-w-xl flex flex-col">
 					<input type="text" id="name" name="name" placeholder="Nom" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
 					<input type="email" id="email" name="email" placeholder="Email" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
@@ -212,11 +274,11 @@
 					<button type="submit" id="submit" class="max-w-fit glass-xl rounded-xl flex items-center px-4 py-2">Send<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
 				</div>
 			</div>
-			<div class="w-1/2 flex flex-col items-end">
-				<h3 class="text-5xl font-bold mb-3"><span class="text-8xl text-primary">G</span>et in Touch<span class="text-7xl text-primary">...</span></h3>
-				<p class="text-end text-xl mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-				<div class="w-full max-w-lg flex justify-between items-center">
-					<div>
+			<div class="w-full lg:w-1/2 flex flex-col items-center lg:items-end mb-10 lg:mb-0 lg:pl-10">
+				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">G</span>et in Touch<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
+				<p class="text-justify sm:text-end text-normal sm:text-xl mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+				<div class="w-full max-w-lg sm:flex justify-between items-center">
+					<div class="text-xs sm:text-normal mb-3 sm:mb-0">
 						<div class="flex items-center mb-1">
 							<img src="assets/icons/mail.png" alt="mail" class="w-3 mr-3">
 							<span>marian.bonhomme@gmail.com</span>
@@ -230,28 +292,35 @@
 							<span>Montpellier - France</span>
 						</div>
 					</div>
-					<div>
+					<div class="flex justify-evenly sm:block">
 						<a href="#" class="block glass-xl rounded-full p-3 my-3"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
 						<a href="#" class="block glass-xl rounded-full p-3 my-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
 						<a href="#" class="block glass-xl rounded-full p-3 my-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
 					</div>
 				</div>
 			</div>
+			<div class="w-full flex lg:hidden justify-center">
+				<div id="contact-form" class="w-full max-w-xl flex flex-col">
+					<input type="text" id="name" name="name" placeholder="Nom" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
+					<input type="email" id="email" name="email" placeholder="Email" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
+					<input type="subject" id="subject" name="subject" placeholder="Subject" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
+					<textarea id="message" name="message" rows="5" placeholder="Message" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required></textarea>
+					<button type="submit" id="submit" class="max-w-fit glass-xl rounded-xl flex items-center px-4 py-2">Send<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
+				</div>
+			</div>
 		</section>
 	</main>
 
-	<div id="scroll-up" class="fixed bottom-5 right-10 cursor-pointer hover:scale-110 glass-xl rounded-full p-4 z-10 opacity-0">
+	<div id="scroll-up" class="fixed bottom-5 right-5 sm:right-10 cursor-pointer hover:scale-110 glass-xl rounded-full p-4 z-10 opacity-0">
 		<img src="assets/icons/scroll.png" alt="scroll-up" class="w-4">
 	</div>
 
-	<footer class="w-full max-w-8xl glass rounded-t-2xl flex justify-center mt-10 py-5">
+	<footer class="w-full max-w-8xl glass rounded-t-2xl flex justify-center mt-10 py-2 sm:py-5 px-3 sm:px-10">
 		<div class="w-full max-w-7xl flex justify-between items-center">
 			<span>© 2023 Marian Bonhomme</span>
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-		<script type="text/javascript" src="assets/scripts/scroll.js"></script>
-		<script type="text/javascript" src="assets/scripts/navigation.js"></script>
 		<script type="text/javascript" src="assets/scripts/typed.js"></script>
 	</footer>
 
