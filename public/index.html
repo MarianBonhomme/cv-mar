@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="assets/scripts/navigation.js"></script>
 </head>
 
-<body class="flex flex-col items-center font-quicksand text-white px-2 sm:px-10 w-screen overflow-x-hidden">
+<body class="flex flex-col items-center font-quicksand text-white px-2 sm:px-10 overflow-x-hidden max-w-screen">
 	
 	<header class="w-full max-w-8xl glass rounded-b-2xl flex justify-center mb-10 py-3 sm:py-0 px-3 sm:px-10">
 		<div class="w-full max-w-7xl flex justify-between items-center">
@@ -35,7 +35,7 @@
 			<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5">
 		</div>
 	</header>
-	<header id="menu-mobile" class="w-screen h-screen glass absolute flex justify-center items-center z-50 translate-x-full">
+	<div id="menu-mobile" class="w-screen h-screen glass absolute flex justify-center items-center z-50 translate-x-full">
 		<img id="close-menu" src="assets/icons/close.svg" alt="close menu" class="absolute top-10 right-10 w-5">
 		<ul id="nav-mobile" class="text-xl">
 			<li class="flex items-center cursor-pointer p-3" data-value="home"><img src="assets/icons/home.svg" alt="home" class="w-4 mr-3">Home</li>
@@ -44,7 +44,7 @@
 			<li class="flex items-center cursor-pointer p-3" data-value="resume"><img src="assets/icons/resume.png" alt="home" class="w-4 mr-3">Resume</li>
 			<li class="flex items-center cursor-pointer p-3" data-value="contact"><img src="assets/icons/contact.png" alt="home" class="w-4 mr-3">Contact</li>
 		</ul>
-	</header>
+	</div>
 
 	<main class="w-full max-w-8xl glass rounded-xl flex flex-col items-center px-3 sm:px-10">
 <!-- Home -->
@@ -55,8 +55,8 @@
 					<p class="text-xl sm:text-3xl font-medium mt-2 mb-4">I'm <span class="typing"></span></p>
 					<button class="glass-xl rounded-xl flex items-center px-4 py-2">Learn More<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
 				</div>
-				<div class="w-full lg:w-5/12 flex justify-end">
-					<div class="w-full max-w-sm glass-xl rounded-xl py-5 px-6 sm:py-10 sm:px-14 flex flex-col items-center">
+				<div class="w-full lg:w-5/12 flex justify-center sm:justify-end">
+					<div class="w-full max-w-xs sm:max-w-sm glass-xl rounded-xl py-5 px-6 sm:py-10 sm:px-14 flex flex-col items-center">
 						<div class="glass-xl rounded-full overflow-hidden">
 							<img src="assets/imgs/pdp-nobg.png" alt="me" class="w-20 sm:w-28">
 						</div>
