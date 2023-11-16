@@ -3,18 +3,21 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./public/**/*.html"],
   theme: {
     extend: {
-      fontFamily: {
-        quicksand: ['quicksand', 'sans'],
+      screens: {
+        sm: '654px',
+        lg: '1062px',
       },
       colors: {
-        primary: '#45DB9C',
+        primary: 'var(--color-primary)',
+      },
+      fontFamily: {
+        quicksand: ['quicksand', 'sans'],
       },
       maxWidth: {
         '8xl': '150rem', 
       },
-      screens: {
-        sm: '654px',
-        lg: '1062px',
+      animation: {
+        spin: 'spin 3s linear infinite'
       }
     },
   },

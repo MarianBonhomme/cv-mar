@@ -18,6 +18,7 @@
 	<script type="text/javascript" src="assets/scripts/scroll.js"></script>
 	<script type="text/javascript" src="assets/scripts/menu.js"></script>
 	<script type="text/javascript" src="assets/scripts/navigation.js"></script>
+	<script type="text/javascript" src="assets/scripts/theme.js"></script>
 </head>
 
 <body class="flex flex-col items-center font-quicksand text-white px-2 sm:px-10 overflow-x-hidden max-w-screen">
@@ -278,7 +279,7 @@
 				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">G</span>et in Touch<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
 				<p class="text-justify sm:text-end text-normal sm:text-xl mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 				<div class="w-full max-w-lg flex flex-col sm:flex-row justify-center sm:justify-between items-center">
-					<div class="text-xs sm:text-normal mb-5 sm:mb-0">
+					<div class="text-xs sm:text-base mb-5 sm:mb-0">
 						<div class="flex items-center mb-1">
 							<img src="assets/icons/mail.png" alt="mail" class="w-3 mr-3">
 							<span>marian.bonhomme@gmail.com</span>
@@ -292,10 +293,10 @@
 							<span>Montpellier - France</span>
 						</div>
 					</div>
-					<div class="w-full flex justify-evenly sm:block">
-						<a href="#" class="block glass-xl rounded-full p-3 my-3"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
-						<a href="#" class="block glass-xl rounded-full p-3 my-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
-						<a href="#" class="block glass-xl rounded-full p-3 my-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
+					<div class="w-full flex justify-evenly sm:flex-col">
+						<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
+						<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
+						<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
 					</div>
 				</div>
 			</div>
@@ -313,6 +314,26 @@
 
 	<div id="scroll-up" class="fixed bottom-5 right-5 sm:right-10 cursor-pointer hover:scale-110 glass-xl rounded-full p-4 z-10 opacity-0">
 		<img src="assets/icons/scroll.png" alt="scroll-up" class="w-4">
+	</div>
+
+	<div class="fixed top-10 right-2 sm:top-1 sm:right-10 flex flex-col items-center cursor-pointer glass rounded-full p-3 z-10 overflow-hidden">
+		<img id="settings-button" src="assets/icons/settings.svg" alt="settings" class="w-6 animate-spin">
+		<div id="settings-dropdown" class="hidden">
+			<div id="wave-theme" class="hidden">
+				<div data-hexa="#664EAC" data-color="purple" class="color-button h-6 w-6 rounded-full bg-[#664EAC] mb-2 mt-3"></div>
+				<div data-hexa="#D61C46" data-color="red" class="color-button h-6 w-6 rounded-full bg-[#D61C46] mb-2"></div>
+				<div data-hexa="#0D8C6A" data-color="green" class="color-button h-6 w-6 rounded-full bg-[#0D8C6A] mb-2"></div>
+				<div data-hexa="#20BDED" data-color="blue" class="color-button h-6 w-6 rounded-full bg-[#20BDED] mb-2"></div>
+				<img id="theme-switcher-button" src="assets/icons/liquid.png" alt="liquid" class="w-6">
+			</div>
+			<div id="liquid-theme" class="">
+				<div data-hexa="#9F4BFF" data-color="purple" class="color-button h-6 w-6 rounded-full bg-[#9F4BFF] mb-2 mt-3"></div>
+				<div data-hexa="#F01368" data-color="red" class="color-button h-6 w-6 rounded-full bg-[#F01368] mb-2"></div>
+				<div data-hexa="#209073" data-color="green" class="color-button h-6 w-6 rounded-full bg-[#209073] mb-2"></div>
+				<div data-hexa="#07CEFC" data-color="blue" class="color-button h-6 w-6 rounded-full bg-[#07CEFC] mb-2"></div>
+				<img id="theme-switcher-button" src="assets/icons/wave.png" alt="wave" class="w-6">
+			</div>
+		</div>
 	</div>
 
 	<footer class="w-full max-w-8xl glass rounded-t-2xl flex justify-center mt-10 py-2 sm:py-5 px-3 sm:px-10">

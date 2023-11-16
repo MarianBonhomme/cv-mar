@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--color-primary: #0D8C6A;
+	--background-url: url('../imgs/bgs/wave-green.jpg');
+}
+
 * {
 	transition: all 0.2s ease-in-out;
 }
 
 body {
-	background-image: url('../imgs/bgs/bg-dark.jpg');
+	background-image: var(--background-url);
 	background-size: 100% auto;
 	background-position: center top;
 }
@@ -22,4 +27,8 @@ body {
 .glass-xl {
 	background: rgba(255, 255, 255, 0.03);
 	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+#settings-container {
+	transition: all 1.5s !important;
 }
