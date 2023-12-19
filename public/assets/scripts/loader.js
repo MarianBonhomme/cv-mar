@@ -2,20 +2,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	function preloadImages() {
 		const images = [
-			'../asets/imgs/bgs/wave-purple.jpg',
-			'../asets/imgs/bgs/wave-red.jpg',
-			'../asets/imgs/bgs/wave-green.jpg',
-			'../asets/imgs/bgs/wave-blue.jpg',
-			'../asets/imgs/bgs/liquid-purple.jpg',
-			'../asets/imgs/bgs/liquid-red.jpg',
-			'../asets/imgs/bgs/liquid-green.jpg',
-			'../asets/imgs/bgs/liquid-blue.jpg',
+			'../assets/imgs/bgs/wave-purple.jpg',
+			'../assets/imgs/bgs/wave-red.jpg',
+			'../assets/imgs/bgs/wave-green.jpg',
+			'../assets/imgs/bgs/wave-blue.jpg',
+			'../assets/imgs/bgs/liquid-purple.jpg',
+			'../assets/imgs/bgs/liquid-red.jpg',
+			'../assets/imgs/bgs/liquid-green.jpg',
+			'../assets/imgs/bgs/liquid-blue.jpg',
 		];
 		images.forEach((image) => {
 			new Image().src = image;
+			console.log('load');
 		});
 		console.log('all loaded')
-	};
+	}
 
 	preloadImages();
 });
