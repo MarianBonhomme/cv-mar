@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-	--color-primary: #0D8C6A;
-	--background-url: url('../imgs/bgs/wave-green.jpg');
+	--color-primary: #664EAC;
+	--background-url: url('../imgs/bgs/wave-purple.jpg');
 }
 
 * {
