@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		];
 		images.forEach((image) => {
 			new Image().src = image;
+			console.log('load');
 		});
+		console.log('all loaded')
 	}
 
 	preloadImages();
