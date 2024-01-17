@@ -26,7 +26,7 @@
 
 <body class="flex flex-col items-center font-quicksand text-white p-2 sm:p-10 overflow-x-hidden max-w-screen">
 	
-	<div id="menu-mobile" class="fixed top-0 left-0 w-screen h-screen overflow-hidden glass flex justify-center items-center z-50 translate-x-full">
+	<div id="menu-mobile" class="fixed top-0 right-0 w-0 h-screen overflow-hidden glass flex justify-center items-center z-50">
 		<img id="close-menu" src="assets/icons/close.svg" alt="close menu" class="absolute top-10 right-10 w-5">
 		<ul id="nav-mobile" class="text-xl">
 			<li class="flex items-center cursor-pointer p-3" data-value="home"><img src="assets/icons/home.svg" alt="home" class="w-4 mr-3">Home</li>
@@ -43,11 +43,11 @@
 				<img src="assets/imgs/logo.png" alt="logo" class="absolute md:top-0 left-0 w-12 md:w-16">
 				<h1 class="font-poppins text-lg sm:text-xl lg:text-3xl hidden">MARIAN BONHOMME</h1>
 				<ul id="nav" class="hidden sm:flex justify-end text-sm md:text-base">
-					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="home">Home</li>
-					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="about">About</li>
-					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="skills">Skills</li>
-					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="resume">Resume</li>
-					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="contact">Contact</li>
+					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="home">Home</li>
+					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="about">About</li>
+					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="skills">Skills</li>
+					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="resume">Resume</li>
+					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="contact">Contact</li>
 				</ul>
 				<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5">
 			</div>
@@ -58,7 +58,7 @@
 				<div class="w-full lg:w-7/12 mb-10 lg:mb-0 flex sm:block flex-col items-center text-center sm:text-start select-none">
 					<h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold"><span class="text-7xl sm:text-8xl lg:text-9xl text-primary">H</span>ello and Welcome<span class="text-primary">!</span></h2>
 					<p class="text-xl sm:text-3xl font-medium mt-2 mb-4">I'm <span class="typing"></span></p>
-					<button class="button-anim glass-xl rounded-md after:-top-[3px]">Learn More</button>
+					<button class="nav button-anim glass-xl rounded-md after:-top-[3px]" data-value="about">Learn More</button>
 				</div>
 				<div class="w-full lg:w-5/12 flex justify-center sm:justify-end">
 					<div class="w-full max-w-xs sm:max-w-sm glass-xl rounded-xl py-5 px-6 sm:py-10 sm:px-14 flex flex-col items-center" data-tilt>
@@ -105,14 +105,14 @@
 						<p class="p-1 sm:p-2"><span class="font-bold">Phone : </span>06 33 63 66 00</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Adress : </span>Montpellier</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Mail : </span>marian.bonhomme@gmail.com</p>
-						<button class="button-anim glass-xl rounded-md mt-3 hidden sm:inline-block after:top-[6px]">Contact Me</button>
+						<button class="nav button-anim glass-xl rounded-md mt-3 hidden sm:inline-block after:top-[6px]" data-value="contact">Contact Me</button>
 					</div>
 					<div class="text-sm flex flex-col">
 						<p class="p-1 sm:p-2"><span class="font-bold">Age : </span>22</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Degree : </span>Bachelor's Full-Stack Developer</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Experience : </span>3 Years</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Availability Status : </span>Not Available</p>
-						<button class="button-anim glass-xl rounded-md max-w-fit mt-3 sm:hidden after:top-[6px]">Contact Me</button>
+						<button class="nav button-anim glass-xl rounded-md max-w-fit mt-3 sm:hidden after:top-[6px]" data-value="contact">Contact Me</button>
 					</div>
 				</div>
 			</div>

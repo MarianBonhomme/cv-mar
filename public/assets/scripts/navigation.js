@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() { 
-	const navbar = document.getElementById("nav");
-	const navbarItems = navbar.querySelectorAll('li');
 	const navbarMobile = document.getElementById("nav-mobile");
 	const navbarItemsMobile = navbarMobile.querySelectorAll('li');
+	const navItems = document.querySelectorAll('.nav');
 
-	navbarItems.forEach(item => {
+	navItems.forEach(item => {
 		item.addEventListener('click', () => {
 			scrollToSection(item.getAttribute('data-value'));
 		});
