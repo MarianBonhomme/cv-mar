@@ -3,32 +3,56 @@
 @tailwind utilities;
 
 :root {
-	--color-primary: #664EAC;
-	--background-url: url('../imgs/bgs/wave-purple.jpg');
-}
-
-* {
-	transition: all 0.2s ease-in-out;
+  --color-primary: #664eac;
+  --background-url: url("../imgs/bgs/wave-purple.jpg");
 }
 
 body {
-	background-image: var(--background-url);
-	background-size: 100% auto;
-	background-position: center top;
+  background-image: var(--background-url);
+  background-size: 100% auto;
+  background-position: center top;
 }
 
 .glass {
-	background: rgba(255, 255, 255, 0.0);
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 .glass-xl {
-	background: rgba(255, 255, 255, 0.03);
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 #settings-container {
-	transition: all 1.5s !important;
+  transition: all 1.5s !important;
+}
+
+.button-anim {
+  position: relative;
+  text-align: center;
+  padding: 8px 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button-anim:after {
+  content: "›" !important;
+  font-size: 28px;
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-anim:hover {
+  padding-right: 40px;
+  padding-left: 20px;
+}
+
+.button-anim:hover:after {
+  opacity: 1;
+  right: 20px;
 }

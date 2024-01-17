@@ -14,6 +14,7 @@
 	<meta property="og:image" content="https://marianbonhomme.netlify.app/assets/imgs/logo.png">
 	<meta property="og:url" content="https://marianbonhomme.netlify.app/">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel='stylesheet' type='text/css' href='assets/styles/output.css'>	
 	<link rel="icon" href="./assets/favicon.png" type="image/png">
 	<script type="text/javascript" src="assets/scripts/loader.js"></script>
@@ -37,16 +38,16 @@
 	</div>
 
 	<main class="w-full max-w-8xl glass rounded-xl flex flex-col items-center px-3 sm:px-10">
-		<header class="w-full max-w-8xl flex justify-center mt-5 px-0 sm:px-10">
+		<header class="w-full max-w-8xl flex justify-center mt-5 px-0 sm:px-10 select-none">
 			<div class="w-full max-w-7xl flex justify-end items-center relative">
 				<img src="assets/imgs/logo.png" alt="logo" class="absolute md:top-0 left-0 w-12 md:w-16">
 				<h1 class="font-poppins text-lg sm:text-xl lg:text-3xl hidden">MARIAN BONHOMME</h1>
 				<ul id="nav" class="hidden sm:flex justify-end text-sm md:text-base">
-					<li class="cursor-pointer p-3 md:p-5" data-value="home">Home</li>
-					<li class="cursor-pointer p-3 md:p-5" data-value="about">About</li>
-					<li class="cursor-pointer p-3 md:p-5" data-value="skills">Skills</li>
-					<li class="cursor-pointer p-3 md:p-5" data-value="resume">Resume</li>
-					<li class="cursor-pointer p-3 md:p-5" data-value="contact">Contact</li>
+					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="home">Home</li>
+					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="about">About</li>
+					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="skills">Skills</li>
+					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="resume">Resume</li>
+					<li class="cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="contact">Contact</li>
 				</ul>
 				<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5">
 			</div>
@@ -54,23 +55,23 @@
 <!-- Home -->
 		<section id="home" class="w-full max-w-7xl flex relative py-10 sm:py-16 lg:py-20">
 			<div class="grow lg:flex items-center">
-				<div class="w-full lg:w-7/12 mb-10 lg:mb-0 flex sm:block flex-col items-center text-center sm:text-start">
+				<div class="w-full lg:w-7/12 mb-10 lg:mb-0 flex sm:block flex-col items-center text-center sm:text-start select-none">
 					<h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold"><span class="text-7xl sm:text-8xl lg:text-9xl text-primary">H</span>ello and Welcome<span class="text-primary">!</span></h2>
 					<p class="text-xl sm:text-3xl font-medium mt-2 mb-4">I'm <span class="typing"></span></p>
-					<button class="glass-xl rounded-xl flex items-center px-4 py-2">Learn More<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
+					<button class="button-anim glass-xl rounded-md after:-top-[3px]">Learn More</button>
 				</div>
 				<div class="w-full lg:w-5/12 flex justify-center sm:justify-end">
-					<div class="w-full max-w-xs sm:max-w-sm glass-xl rounded-xl py-5 px-6 sm:py-10 sm:px-14 flex flex-col items-center">
-						<div class="glass-xl rounded-full overflow-hidden">
+					<div class="w-full max-w-xs sm:max-w-sm glass-xl rounded-xl py-5 px-6 sm:py-10 sm:px-14 flex flex-col items-center" data-tilt>
+						<div class="glass-xl rounded-full overflow-hidden select-none">
 							<img src="assets/imgs/pdp-nobg.png" alt="me" class="w-20 sm:w-28">
 						</div>
 						<h3 class="text-xl sm:text-3xl font-extralight my-3 sm:my-5">Marian Bonhomme</h3>
 						<p class="text-sm">Full-Stack Developer</p>
 						<p class="text-sm">Web Designer</p>
-						<div class="grid grid-cols-3 my-5 sm:my-10">
-							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/github.png" alt="github" class="w-4 sm:w-6"></a>
-							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-4 sm:w-6"></a>
-							<a href="#" class="glass-xl rounded-full p-3 mx-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-4 sm:w-6"></a>
+						<div class="grid grid-cols-3 my-5 sm:my-10 select-none">
+							<a href="#" class="glass-xl rounded-full p-3 mx-3 transition hover:scale-110"><img src="assets/icons/github.png" alt="github" class="w-4 sm:w-6"></a>
+							<a href="#" class="glass-xl rounded-full p-3 mx-3 transition hover:scale-110"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-4 sm:w-6"></a>
+							<a href="#" class="glass-xl rounded-full p-3 mx-3 transition hover:scale-110"><img src="assets/icons/instagram.svg" alt="instagram" class="w-4 sm:w-6"></a>
 						</div>
 						<div class="self-start text-xs sm:text-sm">
 							<div class="flex items-center mb-1">
@@ -93,51 +94,47 @@
 <!-- About -->
 		<section id="about" class="w-full max-w-7xl lg:flex relative py-10 sm:py-16 lg:py-20">
 			<div class="hidden lg:w-1/3 lg:flex items-center pr-10">
-				<img src="assets/imgs/pdp-full.png" alt="me" class="max-h-full">
+				<img src="assets/imgs/pdp-full.png" alt="me" class="max-h-full select-none">
 			</div>
 			<div class="w-full lg:w-2/3 flex flex-col items-end">
-				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">A</span>bout Me<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
+				<h3 class="text-4xl sm:text-5xl font-bold mb-3 select-none"><span class="text-7xl sm:text-8xl text-primary">A</span>bout Me<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
 				<p class="text-justify sm:text-end text-normal sm:text-xl mb-5 sm:mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda est obcaecati dolores consectetur, sunt, rem illo facilis iste odit animi illum saepe ab culpa vel ut! Nesciunt earum in dolorem?</p>
-				<div class="w-full max-w-2xl sm:flex justify-between glass-xl rounded-xl py-3 px-3 sm:py-7 sm:px-10">
+				<div class="w-full max-w-2xl sm:flex justify-between glass-xl rounded-xl py-3 px-3 sm:py-7 sm:px-10" data-aos="fade-left" data-aos-duration="300" data-aos-easing="ease-out">
 					<div class="text-sm">
 						<p class="p-1 sm:p-2"><span class="font-bold">Name : </span>Marian Bonhomme</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Phone : </span>06 33 63 66 00</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Adress : </span>Montpellier</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Mail : </span>marian.bonhomme@gmail.com</p>
-						<button class="hidden sm:flex max-w-fit glass-xl rounded-xl items-center px-4 py-2 mt-3">Contact Me<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
+						<button class="button-anim glass-xl rounded-md mt-3 hidden sm:inline-block after:top-[6px]">Contact Me</button>
 					</div>
 					<div class="text-sm flex flex-col">
 						<p class="p-1 sm:p-2"><span class="font-bold">Age : </span>22</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Degree : </span>Bachelor's Full-Stack Developer</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Experience : </span>3 Years</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Availability Status : </span>Not Available</p>
-						<button class="flex sm:hidden max-w-fit glass-xl rounded-xl items-center px-4 py-2 mt-3">Contact Me<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
+						<button class="button-anim glass-xl rounded-md max-w-fit mt-3 sm:hidden after:top-[6px]">Contact Me</button>
 					</div>
 				</div>
 			</div>
 		</section>
 <!-- Skills -->
 		<section id="skills" class="w-full max-w-7xl flex flex-col items-center py-10 sm:py-16 lg:py-20">
-			<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">D</span>ev Skills<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
+			<h3 class="text-4xl sm:text-5xl font-bold mb-3 select-none"><span class="text-7xl sm:text-8xl text-primary">D</span>ev Skills<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
 			<p class="max-w-5xl tetx-justify sm:text-center text-normal sm:text-xl mb-5 sm:mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque.</p>
 			<div class="max-w-xs lg:max-w-none grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-10 font-extralight">
 				<div class="glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
 					<h4 class="text-2xl">INTEGRATION</h4>
 					<p class="text-justify mt-1 mb-3 sm:mt-3 sm:mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque.</p>
-					<div class="w-full flex justify-evenly items-center text-xs">
-						<div class="flex flex-col items-center">
-							<img src="assets/imgs/dev/html.svg" alt="html" class="w-12 mb-1">
-							<span>HTML</span>
+					<div class="w-full flex justify-evenly items-center text-xs select-none">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
+							<img src="assets/imgs/dev/scss.svg" alt="scss" class="w-12 mb-1">
+							<span>SCSS</span>
 						</div>
-						<div class="flex flex-col items-center">
-							<img src="assets/imgs/dev/css.svg" alt="css" class="w-12 mb-1">
-							<span>CSS</span>
-						</div>
-						<div class="flex flex-col items-center text-center">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/tailwind.svg" alt="tailwind" class="w-12 mb-1">
 							<span>TAILWIND CSS</span>
 						</div>
-						<div class="flex flex-col items-center">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/bootstrap.svg" alt="bootstrap" class="w-12 mb-1">
 							<span>BOOTSTRAP</span>
 						</div>
@@ -146,16 +143,16 @@
 				<div class="glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
 					<h4 class="text-2xl">FRONT-END</h4>
 					<p class="text-justify mt-1 mb-3 sm:mt-3 sm:mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque. </p>
-					<div class="w-full flex justify-evenly items-center text-xs">
-						<div class="flex flex-col items-center">
+					<div class="w-full flex justify-evenly items-center text-xs select-none">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/angular.png" alt="angular" class="w-12 mb-1">
 							<span>ANGULAR</span>
 						</div>
-						<div class="flex flex-col items-center">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/react.svg" alt="react" class="w-12 mb-1">
 							<span>REACT</span>
 						</div>
-						<div class="flex flex-col items-center">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/ionic.svg" alt="ionic" class="w-12 mb-1">
 							<span>IONIC</span>
 						</div>
@@ -164,16 +161,16 @@
 				<div class="glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
 					<h4 class="text-2xl">BACK-END</h4>
 					<p class="text-justify mt-1 mb-3 sm:mt-3 sm:mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque. </p>
-					<div class="w-full flex justify-evenly items-center text-xs">
-						<div class="flex flex-col items-center">
+					<div class="w-full flex justify-evenly items-center text-xs select-none">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/symfony.svg" alt="symfony" class="w-12 mb-1">
 							<span>SYMFONY</span>
 						</div>
-						<div class="flex flex-col items-center">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/nodejs.svg" alt="nodejs" class="w-12 mb-1">
 							<span>NODEJS</span>
 						</div>
-						<div class="flex flex-col items-center">
+						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/mysql.svg" alt="mysql" class="w-12 mb-1">
 							<span>MYSQL</span>
 						</div>
@@ -183,13 +180,13 @@
 		</section>
 <!-- Resume -->
 		<section id="resume" class="w-full max-w-7xl relative py-10 sm:py-16 lg:py-20">
-			<h3 class="text-4xl sm:text-5xl font-bold mb-3 lg:absolute"><span class="text-7xl sm:text-8xl text-primary">R</span>esume<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
+			<h3 class="text-4xl sm:text-5xl font-bold mb-3 lg:absolute select-none"><span class="text-7xl sm:text-8xl text-primary">R</span>esume<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
 			<!-- tab & desktop -->
 			<div class="w-full hidden sm:flex flex-col relative lg:mt-20">
 				<div class="w-1/2 self-end flex items-center relative border-l-2 border-white">
 					<div class="absolute -left-2 h-4 w-4 rounded-full bg-white"></div>
-					<div class="text-5xl text-primary font-bold ml-3 mr-1 whitespace-nowrap absolute lg:relative -left-40 lg:left-0">23-24</div>
-					<div class="text-sm glass-xl rounded-xl py-3 px-4 ml-3 lg:ml-0">
+					<div class="text-5xl text-primary font-bold ml-3 mr-1 whitespace-nowrap absolute lg:relative -left-40 lg:left-0 select-none">23-24</div>
+					<div class="text-sm glass-xl rounded-xl py-3 px-4 ml-3 lg:ml-0" data-aos="fade-left" data-aos-duration="300" data-aos-easing="ease-out">
 						<h4 class="text-xl font-bold">Full Stack Applications Developer</h4>
 						<span class="font-semibold">Montpellier</span>
 						<p class="font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
@@ -197,17 +194,17 @@
 				</div>
 				<div class="w-1/2 self-start flex items-center relative border-r-2 border-white -right-[2px]">
 					<div class="absolute -right-2 h-4 w-4 rounded-full bg-white"></div>
-					<div class="text-end text-sm glass-xl rounded-xl py-3 px-4 mr-3 lg:mr-0">
+					<div class="text-end text-sm glass-xl rounded-xl py-3 px-4 mr-3 lg:mr-0" data-aos="fade-right" data-aos-duration="300" data-aos-easing="ease-out" data-aos-delay="100">
 						<h4 class="text-xl font-bold">Front-End Developer</h4>
 						<span class="font-semibold">Nancy</span>
 						<p class="font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
 					</div>
-					<div class="text-5xl text-primary font-bold mr-3 ml-1 whitespace-nowrap absolute lg:relative -right-40 lg:right-0">20-22</div>
+					<div class="text-5xl text-primary font-bold mr-3 ml-1 whitespace-nowrap absolute lg:relative -right-40 lg:right-0 select-none">20-22</div>
 				</div>
 				<div class="w-1/2 self-end flex items-center relative border-l-2 border-white">
 					<div class="absolute -left-2 h-4 w-4 rounded-full bg-white"></div>
-					<div class="text-5xl text-primary font-bold ml-3 mr-1 whitespace-nowrap absolute lg:relative -left-40 lg:left-0">2019</div>
-					<div class="text-sm glass-xl rounded-xl py-3 px-4 ml-3 lg:ml-0">
+					<div class="text-5xl text-primary font-bold ml-3 mr-1 whitespace-nowrap absolute lg:relative -left-40 lg:left-0 select-none">2019</div>
+					<div class="text-sm glass-xl rounded-xl py-3 px-4 ml-3 lg:ml-0" data-aos="fade-left" data-aos-duration="300" data-aos-easing="ease-out">
 						<h4 class="text-xl font-bold">Military Reservist / L1 STAPS</h4>
 						<span class="font-semibold">Nancy</span>
 						<p class="font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
@@ -215,12 +212,12 @@
 				</div>
 				<div class="w-1/2 self-start flex items-center relative border-r-2 border-white -right-[2px]">
 					<div class="absolute -right-2 h-4 w-4 rounded-full bg-white"></div>
-					<div class="text-end text-sm glass-xl rounded-xl py-3 px-4 mr-3 lg:mr-0">
+					<div class="text-end text-sm glass-xl rounded-xl py-3 px-4 mr-3 lg:mr-0" data-aos="fade-right" data-aos-duration="300" data-aos-easing="ease-out" data-aos-delay="100">
 						<h4 class="text-xl font-bold">Economic and Social Baccalaureate</h4>
 						<span class="font-semibold">Toul</span>
 						<p class="font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
 					</div>
-					<div class="text-5xl text-primary font-bold mr-3 ml-1 whitespace-nowrap absolute lg:relative -right-40 lg:right-0">2018</div>
+					<div class="text-5xl text-primary font-bold mr-3 ml-1 whitespace-nowrap absolute lg:relative -right-40 lg:right-0 select-none">2018</div>
 				</div>
 			</div>
 			<!-- mobile -->
@@ -230,7 +227,7 @@
 					<div class="py-3 px-4 ml-3">
 						<div class="flex justify-between font-bold">
 							<h4>Full Stack Applications Developer</h4>
-							<p class="glass-xl rounded-xl text-primary text-xs py-1 px-2">22-24</p>
+							<p class="glass-xl rounded-xl text-primary text-xs py-1 px-2 select-none">22-24</p>
 						</div>
 						<span class="text-sm font-medium">Montpellier</span>
 						<p class="text-xs font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
@@ -241,7 +238,7 @@
 					<div class="py-3 px-4 ml-3">
 						<div class="flex justify-between font-bold">
 							<h4>Front-End Developer</h4>
-							<p class="glass-xl rounded-xl text-primary text-xs py-1 px-2">20-22</p>
+							<p class="glass-xl rounded-xl text-primary text-xs py-1 px-2 select-none">20-22</p>
 						</div>
 						<span class="text-sm font-medium">Nancy</span>
 						<p class="text-xs font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
@@ -252,7 +249,7 @@
 					<div class="py-3 px-4 ml-3">
 						<div class="flex justify-between font-bold">
 							<h4>Military Reservist / L1 STAPS</h4>
-							<p class="glass-xl rounded-xl text-primary text-xs py-1 px-2">2019</p>
+							<p class="glass-xl rounded-xl text-primary text-xs py-1 px-2 select-none">2019</p>
 						</div>
 						<span class="text-sm font-medium">Nancy</span>
 						<p class="text-xs font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
@@ -263,7 +260,7 @@
 					<div class="py-3 px-4 ml-3">
 						<div class="flex justify-between font-bold">
 							<h4>Economic and Social Baccalaureate</h4>
-							<p class="glass-xl rounded-xl text-primary text-xs py-1 px-2">2018</p>
+							<p class="glass-xl rounded-xl text-primary text-xs py-1 px-2 select-none">2018</p>
 						</div>
 						<span class="text-sm font-medium">Toul</span>
 						<p class="text-xs font-extralight mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo id non reiciendis veniam beatae debitis rem neque accusantium provident, eius recusandae! Facere, aut.</p>
@@ -279,16 +276,16 @@
 					<input type="email" id="email" name="email" placeholder="Email" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
 					<input type="subject" id="subject" name="subject" placeholder="Subject" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
 					<textarea id="message" name="message" rows="5" placeholder="Message" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required></textarea>
-					<button type="submit" id="submit" class="max-w-fit glass-xl rounded-xl flex items-center px-4 py-2">Send<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
+					<button type="submit" id="submit" class="button-anim glass-xl rounded-md max-w-fit mt-3 hidden sm:inline-block after:-top-[3px]">Send</button>
 				</div>
 			</div>
 			<div class="w-full lg:w-1/2 flex flex-col items-center mb-10 lg:mb-0 lg:px-5">
-				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">G</span>et in Touch<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
+				<h3 class="text-4xl sm:text-5xl font-bold mb-3 select-none"><span class="text-7xl sm:text-8xl text-primary">G</span>et in Touch<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
 				<p class="text-center sm:text-xl mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>					
-				<div class="w-full flex justify-center gap-5 mb-3">
-					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
-					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
-					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
+				<div class="w-full flex justify-center gap-5 mb-3 select-none">
+					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3 transition hover:scale-110"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
+					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3 transition hover:scale-110"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
+					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3 transition hover:scale-110"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
 				</div>
 				<div class="flex items-center mb-1">
 					<img src="assets/icons/mail.png" alt="mail" class="w-3 mr-3">
@@ -309,27 +306,30 @@
 					<input type="email" id="email" name="email" placeholder="Email" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
 					<input type="subject" id="subject" name="subject" placeholder="Subject" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
 					<textarea id="message" name="message" rows="5" placeholder="Message" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required></textarea>
-					<button type="submit" id="submit" class="max-w-fit glass-xl rounded-xl flex items-center px-4 py-2">Send<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
+					<button type="submit" id="submit" class="button-anim glass-xl rounded-md max-w-fit mt-3 sm:hidden after:-top-[3px]">Send</button>
 				</div>
 			</div>
 		</section>
 
 		<footer class="w-full max-w-8xl flex justify-center mt-10 mb-5">
-			<div class="w-full max-w-7xl flex justify-between items-center">
+			<div class="w-full max-w-7xl flex justify-between items-center select-none">
 				<span>© 2024 <span class="mx-2">•</span> All rights reserved <span class="mx-2">•</span> Designed and Developed by Marian Bonhomme</span>
 			</div>
 	
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 			<script type="text/javascript" src="assets/scripts/typed.js"></script>
+			<script type="text/javascript" src="assets/scripts/vanilla-tilt.js"></script>
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>AOS.init()</script>
 		</footer>
 	
 	</main>
 
-	<div id="scroll-up" class="fixed bottom-12 right-5 sm:right-12 cursor-pointer hover:scale-110 glass-xl rounded-full p-4 z-10 opacity-0">
+	<div id="scroll-up" class="fixed bottom-12 right-5 sm:right-12 cursor-pointer hover:scale-110 glass-xl rounded-full p-4 z-10 opacity-0 select-none">
 		<img src="assets/icons/scroll.png" alt="scroll-up" class="w-4">
 	</div>
 
-	<div class="fixed top-12 right-2 sm:right-12 flex flex-col items-center cursor-pointer glass rounded-full p-3 z-10 overflow-hidden">
+	<div class="fixed top-12 right-2 sm:right-12 flex flex-col items-center cursor-pointer glass rounded-full p-3 z-10 overflow-hidden select-none">
 		<img id="settings-button" src="assets/icons/settings.svg" alt="settings" class="w-6 animate-spin">
 		<div id="settings-dropdown" class="hidden">
 			<div theme="wave" hexa="#664EAC" color="purple" class="color-button mt-4">
