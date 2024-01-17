@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	window.toggleModal = function(openMenu) {
 		if (openMenu) {
-			modal.classList.remove('w-0');
-			modal.classList.add('w-full');
+			modal.classList.remove('translate-x-full');
+			body.classList.add('overflow-hidden');
 		} else {
-			modal.classList.remove('w-full');
-			modal.classList.add('w-0');
-		}		
+			modal.classList.add('translate-x-full');
+			body.classList.remove('overflow-hidden');
+		}	
 	}
 })

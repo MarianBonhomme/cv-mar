@@ -26,8 +26,8 @@
 
 <body class="flex flex-col items-center font-quicksand text-white p-2 sm:p-10 overflow-x-hidden max-w-screen">
 	
-	<div id="menu-mobile" class="fixed top-0 right-0 w-0 h-screen overflow-hidden glass flex justify-center items-center z-50">
-		<img id="close-menu" src="assets/icons/close.svg" alt="close menu" class="absolute top-10 right-10 w-5">
+	<div id="menu-mobile" class="fixed top-0 right-0 w-screen h-screen overflow-hidden glass flex justify-center items-center z-50 translate-x-full transition-all">
+		<img id="close-menu" src="assets/icons/close.svg" alt="close menu" class="absolute top-10 right-10 w-5 cursor-pointer">
 		<ul id="nav-mobile" class="text-xl">
 			<li class="flex items-center cursor-pointer p-3" data-value="home"><img src="assets/icons/home.svg" alt="home" class="w-4 mr-3">Home</li>
 			<li class="flex items-center cursor-pointer p-3" data-value="about"><img src="assets/icons/about.png" alt="home" class="w-4 mr-3">About</li>
@@ -49,7 +49,7 @@
 					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="resume">Resume</li>
 					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="contact">Contact</li>
 				</ul>
-				<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5">
+				<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5 cursor-pointer">
 			</div>
 		</header>
 <!-- Home -->
@@ -99,7 +99,7 @@
 			<div class="w-full lg:w-2/3 flex flex-col items-end">
 				<h3 class="text-4xl sm:text-5xl font-bold mb-3 select-none"><span class="text-7xl sm:text-8xl text-primary">A</span>bout Me<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
 				<p class="text-justify sm:text-end text-normal sm:text-xl mb-5 sm:mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda est obcaecati dolores consectetur, sunt, rem illo facilis iste odit animi illum saepe ab culpa vel ut! Nesciunt earum in dolorem?</p>
-				<div class="w-full max-w-2xl sm:flex justify-between glass-xl rounded-xl py-3 px-3 sm:py-7 sm:px-10" data-aos="fade-left" data-aos-duration="300" data-aos-easing="ease-out">
+				<div class="w-full max-w-2xl sm:flex justify-between glass-xl rounded-xl py-3 px-3 sm:py-7 sm:px-10">
 					<div class="text-sm">
 						<p class="p-1 sm:p-2"><span class="font-bold">Name : </span>Marian Bonhomme</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Phone : </span>06 33 63 66 00</p>
