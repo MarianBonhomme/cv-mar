@@ -5,16 +5,17 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<title>Marian Bonhomme</title>
-	<meta name="description" content="Welcome to my CV website ! You will find all informations about me."/>
+	<meta name="description" content="Welcome to my Resume website ! You will find all informations about me."/>
 	<meta name="robots" content="index">
 	<meta property="og:site_name" content="Marian Bonhomme">
 	<meta property="og:type" content="Website">
 	<meta property="og:title" content="Marian Bonhomme">
 	<meta property="og:description" content="Welcome to my CV website ! U will find all informations about me.">
-	<meta property="og:image" content="https://marianbonhomme.netlify.app/assets/imgs/pdp-nobg.png">
+	<meta property="og:image" content="https://marianbonhomme.netlify.app/assets/imgs/logo.png">
 	<meta property="og:url" content="https://marianbonhomme.netlify.app/">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel='stylesheet' type='text/css' href='assets/styles/output.css'>	
+	<link rel="icon" href="./assets/favicon.png" type="image/png">
 	<script type="text/javascript" src="assets/scripts/loader.js"></script>
 	<script type="text/javascript" src="assets/scripts/scroll.js"></script>
 	<script type="text/javascript" src="assets/scripts/menu.js"></script>
@@ -22,21 +23,8 @@
 	<script type="text/javascript" src="assets/scripts/theme.js"></script>
 </head>
 
-<body class="flex flex-col items-center font-quicksand text-white px-2 sm:px-10 overflow-x-hidden max-w-screen">
+<body class="flex flex-col items-center font-quicksand text-white p-2 sm:p-10 overflow-x-hidden max-w-screen">
 	
-	<header class="w-full max-w-8xl glass rounded-b-2xl flex justify-center mb-10 py-3 sm:py-0 px-3 sm:px-10">
-		<div class="w-full max-w-7xl flex justify-between items-center">
-			<h1 class="font-poppins text-lg sm:text-xl lg:text-3xl">MARIAN BONHOMME</h1>
-			<ul id="nav" class="hidden sm:flex justify-end text-sm lg:text-normal">
-				<li class="cursor-pointer p-3 lg:p-5" data-value="home">Home</li>
-				<li class="cursor-pointer p-3 lg:p-5" data-value="about">About</li>
-				<li class="cursor-pointer p-3 lg:p-5" data-value="skills">Skills</li>
-				<li class="cursor-pointer p-3 lg:p-5" data-value="resume">Resume</li>
-				<li class="cursor-pointer p-3 lg:p-5" data-value="contact">Contact</li>
-			</ul>
-			<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5">
-		</div>
-	</header>
 	<div id="menu-mobile" class="fixed top-0 left-0 w-screen h-screen overflow-hidden glass flex justify-center items-center z-50 translate-x-full">
 		<img id="close-menu" src="assets/icons/close.svg" alt="close menu" class="absolute top-10 right-10 w-5">
 		<ul id="nav-mobile" class="text-xl">
@@ -49,11 +37,25 @@
 	</div>
 
 	<main class="w-full max-w-8xl glass rounded-xl flex flex-col items-center px-3 sm:px-10">
+		<header class="w-full max-w-8xl flex justify-center mt-5 px-0 sm:px-10">
+			<div class="w-full max-w-7xl flex justify-end items-center relative">
+				<img src="assets/imgs/logo.png" alt="logo" class="absolute md:top-0 left-0 w-12 md:w-16">
+				<h1 class="font-poppins text-lg sm:text-xl lg:text-3xl hidden">MARIAN BONHOMME</h1>
+				<ul id="nav" class="hidden sm:flex justify-end text-sm md:text-base">
+					<li class="cursor-pointer p-3 md:p-5" data-value="home">Home</li>
+					<li class="cursor-pointer p-3 md:p-5" data-value="about">About</li>
+					<li class="cursor-pointer p-3 md:p-5" data-value="skills">Skills</li>
+					<li class="cursor-pointer p-3 md:p-5" data-value="resume">Resume</li>
+					<li class="cursor-pointer p-3 md:p-5" data-value="contact">Contact</li>
+				</ul>
+				<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5">
+			</div>
+		</header>
 <!-- Home -->
 		<section id="home" class="w-full max-w-7xl flex relative py-10 sm:py-16 lg:py-20">
 			<div class="grow lg:flex items-center">
 				<div class="w-full lg:w-7/12 mb-10 lg:mb-0 flex sm:block flex-col items-center text-center sm:text-start">
-					<h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold"><span class="text-7xl sm:text-8xl lg:text-9xl text-primary">H</span>ello and Welcome!</h2>
+					<h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold"><span class="text-7xl sm:text-8xl lg:text-9xl text-primary">H</span>ello and Welcome<span class="text-primary">!</span></h2>
 					<p class="text-xl sm:text-3xl font-medium mt-2 mb-4">I'm <span class="typing"></span></p>
 					<button class="glass-xl rounded-xl flex items-center px-4 py-2">Learn More<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
 				</div>
@@ -94,7 +96,7 @@
 				<img src="assets/imgs/pdp-full.png" alt="me" class="max-h-full">
 			</div>
 			<div class="w-full lg:w-2/3 flex flex-col items-end">
-				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">A</span>bout Me<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
+				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">A</span>bout Me<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
 				<p class="text-justify sm:text-end text-normal sm:text-xl mb-5 sm:mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda est obcaecati dolores consectetur, sunt, rem illo facilis iste odit animi illum saepe ab culpa vel ut! Nesciunt earum in dolorem?</p>
 				<div class="w-full max-w-2xl sm:flex justify-between glass-xl rounded-xl py-3 px-3 sm:py-7 sm:px-10">
 					<div class="text-sm">
@@ -116,7 +118,7 @@
 		</section>
 <!-- Skills -->
 		<section id="skills" class="w-full max-w-7xl flex flex-col items-center py-10 sm:py-16 lg:py-20">
-			<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">D</span>ev Skills<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
+			<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">D</span>ev Skills<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
 			<p class="max-w-5xl tetx-justify sm:text-center text-normal sm:text-xl mb-5 sm:mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo assumenda veritatis ad eveniet ratione harum dignissimos cumque.</p>
 			<div class="max-w-xs lg:max-w-none grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-10 font-extralight">
 				<div class="glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
@@ -153,6 +155,10 @@
 							<img src="assets/imgs/dev/react.svg" alt="react" class="w-12 mb-1">
 							<span>REACT</span>
 						</div>
+						<div class="flex flex-col items-center">
+							<img src="assets/imgs/dev/ionic.svg" alt="ionic" class="w-12 mb-1">
+							<span>IONIC</span>
+						</div>
 					</div>
 				</div>
 				<div class="glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
@@ -177,7 +183,7 @@
 		</section>
 <!-- Resume -->
 		<section id="resume" class="w-full max-w-7xl relative py-10 sm:py-16 lg:py-20">
-			<h3 class="text-4xl sm:text-5xl font-bold mb-3 lg:absolute"><span class="text-7xl sm:text-8xl text-primary">R</span>esume<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
+			<h3 class="text-4xl sm:text-5xl font-bold mb-3 lg:absolute"><span class="text-7xl sm:text-8xl text-primary">R</span>esume<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
 			<!-- tab & desktop -->
 			<div class="w-full hidden sm:flex flex-col relative lg:mt-20">
 				<div class="w-1/2 self-end flex items-center relative border-l-2 border-white">
@@ -276,29 +282,25 @@
 					<button type="submit" id="submit" class="max-w-fit glass-xl rounded-xl flex items-center px-4 py-2">Send<img src="assets/icons/arrow.png" alt="arrow" class="ml-2 h-6"></button>
 				</div>
 			</div>
-			<div class="w-full lg:w-1/2 flex flex-col items-center lg:items-end mb-10 lg:mb-0 lg:pl-10">
-				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">G</span>et in Touch<span class="hidden sm:inline text-7xl text-primary">...</span></h3>
-				<p class="text-justify sm:text-end text-normal sm:text-xl mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-				<div class="w-full max-w-lg flex flex-col sm:flex-row justify-center sm:justify-between items-center">
-					<div class="text-xs sm:text-base mb-5 sm:mb-0">
-						<div class="flex items-center mb-1">
-							<img src="assets/icons/mail.png" alt="mail" class="w-3 mr-3">
-							<span>marian.bonhomme@gmail.com</span>
-						</div>
-						<div class="flex items-center mb-1">
-							<img src="assets/icons/phone.png" alt="phone" class="w-3 mr-3">
-							<span>06 33 63 66 00</span>
-						</div>
-						<div class="flex items-center">
-							<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-3">
-							<span>Montpellier - France</span>
-						</div>
-					</div>
-					<div class="w-full flex justify-evenly sm:flex-col">
-						<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
-						<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
-						<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
-					</div>
+			<div class="w-full lg:w-1/2 flex flex-col items-center mb-10 lg:mb-0 lg:px-5">
+				<h3 class="text-4xl sm:text-5xl font-bold mb-3"><span class="text-7xl sm:text-8xl text-primary">G</span>et in Touch<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
+				<p class="text-center sm:text-xl mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>					
+				<div class="w-full flex justify-center gap-5 mb-3">
+					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
+					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
+					<a href="#" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
+				</div>
+				<div class="flex items-center mb-1">
+					<img src="assets/icons/mail.png" alt="mail" class="w-3 mr-3">
+					<span>marian.bonhomme@gmail.com</span>
+				</div>
+				<div class="flex items-center mb-1">
+					<img src="assets/icons/phone.png" alt="phone" class="w-3 mr-3">
+					<span>06 33 63 66 00</span>
+				</div>
+				<div class="flex items-center">
+					<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-3">
+					<span>Montpellier - France</span>
 				</div>
 			</div>
 			<div class="w-full flex lg:hidden justify-center">
@@ -311,13 +313,23 @@
 				</div>
 			</div>
 		</section>
+
+		<footer class="w-full max-w-8xl flex justify-center mt-10 mb-5">
+			<div class="w-full max-w-7xl flex justify-between items-center">
+				<span>© 2024 <span class="mx-2">•</span> All rights reserved <span class="mx-2">•</span> Designed and Developed by Marian Bonhomme</span>
+			</div>
+	
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+			<script type="text/javascript" src="assets/scripts/typed.js"></script>
+		</footer>
+	
 	</main>
 
-	<div id="scroll-up" class="fixed bottom-5 right-5 sm:right-10 cursor-pointer hover:scale-110 glass-xl rounded-full p-4 z-10 opacity-0">
+	<div id="scroll-up" class="fixed bottom-12 right-5 sm:right-12 cursor-pointer hover:scale-110 glass-xl rounded-full p-4 z-10 opacity-0">
 		<img src="assets/icons/scroll.png" alt="scroll-up" class="w-4">
 	</div>
 
-	<div class="fixed top-10 right-2 sm:top-1 sm:right-10 flex flex-col items-center cursor-pointer glass rounded-full p-3 z-10 overflow-hidden">
+	<div class="fixed top-12 right-2 sm:right-12 flex flex-col items-center cursor-pointer glass rounded-full p-3 z-10 overflow-hidden">
 		<img id="settings-button" src="assets/icons/settings.svg" alt="settings" class="w-6 animate-spin">
 		<div id="settings-dropdown" class="hidden">
 			<div theme="wave" hexa="#664EAC" color="purple" class="color-button mt-4">
@@ -347,14 +359,6 @@
 		</div>
 	</div>
 
-	<footer class="w-full max-w-8xl glass rounded-t-2xl flex justify-center mt-10 py-2 sm:py-5 px-3 sm:px-10">
-		<div class="w-full max-w-7xl flex justify-between items-center">
-			<span>© 2023 Marian Bonhomme</span>
-		</div>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-		<script type="text/javascript" src="assets/scripts/typed.js"></script>
-	</footer>
-
+	
 </body>
 </html>
