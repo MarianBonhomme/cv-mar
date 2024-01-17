@@ -1,7 +1,8 @@
 var typed = new Typed(".typing",{
     strings: [
         "Full-Stack Developer.",
-        "Web Designer.",
+        "Web Developer.",
+        "Mobile Developer.",
     ],
     typeSpeed: 50,
     backSpeed: 30,
