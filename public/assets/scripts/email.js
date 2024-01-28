@@ -14,41 +14,56 @@ document.addEventListener("DOMContentLoaded", function () {
   const errorPopup = document.getElementById("popup-confirm");
 
   button.addEventListener("click", () => {
-    sendEmail(false)
+    checkFormValidity(false)
   });
 
   buttonMobile.addEventListener("click", () => {
-    sendEmail(false)
+    checkFormValidity(true)
   });
 
-  function sendEmail(isMobile) {
-    const isFormValid = checkFormValidity(isMobile);
+  function checkFormValidity(isMobile) {
+    const isFormValid = checkInputsValidity(isMobile);
 
     if (isFormValid) {
-      const formData = {
-        platform: 'CV',
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-      };
-
-      emailjs.send("service_q4pssxq", "template_zpb6wpe", formData).then(
-        function () {
-          displayConfirm();
-        },
-        function () {
-          displayError();
-        }
-      );
-
-      resetInputs(isMobile);
+      if (isMobile) {
+        const formData = {
+          platform: 'CV',
+          name: document.getElementById("mobile-name").value,
+          email: document.getElementById("mobile-email").value,
+          subject: document.getElementById("mobile-subject").value,
+          message: document.getElementById("mobile-message").value,
+        };        
+        sendEmail(isMobile, formData)
+      } else {
+        const formData = {
+          platform: 'CV',
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("message").value,
+        };
+        sendEmail(isMobile, formData)
+      }      
     } else {
       displayInvalid();
     }
   }
 
-  function checkFormValidity(isMobile) {
+  function sendEmail(isMobile, formData) {
+    console.log(formData);
+    emailjs.send("service_q4pssxq", "template_zpb6wpe", formData).then(
+      function () {
+        displayConfirm();
+      },
+      function () {
+        displayError();
+      }
+    );
+
+    resetInputs(isMobile);
+  }
+
+  function checkInputsValidity(isMobile) {
     isValid = true;
 
     if (isMobile) {
