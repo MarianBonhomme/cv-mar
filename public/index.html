@@ -22,6 +22,8 @@
 	<script type="text/javascript" src="assets/scripts/menu.js"></script>
 	<script type="text/javascript" src="assets/scripts/navigation.js"></script>
 	<script type="text/javascript" src="assets/scripts/theme.js"></script>
+	<script type="text/javascript" src="assets/scripts/email.js"></script>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body class="flex flex-col items-center font-quicksand text-white p-2 sm:p-10 overflow-x-hidden max-w-screen">
@@ -164,6 +166,10 @@
 							<img src="assets/imgs/dev/ionic.svg" alt="ionic" class="w-12 mb-1">
 							<span>IONIC</span>
 						</div>
+						<div class="flex flex-col items-center hover:brightness-125 transition">
+							<img src="assets/imgs/dev/react-native.svg" alt="react-native" class="w-12 mb-1">
+							<span>REACT NATIVE</span>
+						</div>
 					</div>
 				</div>
 				<div class="flex flex-col justify-between glass-xl rounded-xl py-3 px-4 sm:py-7 sm:px-10">
@@ -173,7 +179,7 @@
 					</div>
 					<div class="w-full flex justify-evenly items-center text-xs select-none">
 						<div class="flex flex-col items-center hover:brightness-125 transition">
-							<img src="assets/imgs/dev/symfony.svg" alt="symfony" class="w-12 mb-1">
+							<img src="assets/imgs/dev/symfony.png" alt="symfony" class="w-12 mb-1">
 							<span>SYMFONY</span>
 						</div>
 						<div class="flex flex-col items-center hover:brightness-125 transition">
@@ -183,6 +189,10 @@
 						<div class="flex flex-col items-center hover:brightness-125 transition">
 							<img src="assets/imgs/dev/mysql.svg" alt="mysql" class="w-12 mb-1">
 							<span>MYSQL</span>
+						</div>
+						<div class="flex flex-col items-center hover:brightness-125 transition">
+							<img src="assets/imgs/dev/firebase.svg" alt="firebase" class="w-12 mb-1">
+							<span>FIREBASE</span>
 						</div>
 					</div>
 				</div>
@@ -309,12 +319,12 @@
 				</div>
 			</div>
 			<div class="w-full flex lg:hidden justify-center">
-				<div id="contact-form" class="w-full max-w-xl flex flex-col">
+				<div id="contact-form-mobile" class="w-full max-w-xl flex flex-col">
 					<input type="text" id="name" name="name" placeholder="Nom" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
 					<input type="email" id="email" name="email" placeholder="Email" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
 					<input type="subject" id="subject" name="subject" placeholder="Subject" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required>
 					<textarea id="message" name="message" rows="5" placeholder="Message" class="glass-xl rounded-xl outline-none py-2 px-4 mb-4" required></textarea>
-					<button type="submit" id="submit" class="button-anim glass-xl rounded-md max-w-fit mt-3 sm:hidden after:-top-[3px]">Send</button>
+					<button type="submit" id="submit-mobile" class="button-anim glass-xl rounded-md max-w-fit mt-3 sm:hidden after:-top-[3px]">Send</button>
 				</div>
 			</div>
 		</section>
@@ -332,6 +342,16 @@
 		</footer>
 	
 	</main>
+
+	<div id="popup-invalid" class="fixed top-10 right-28 glass-xl rounded-xl px-6 py-4 opacity-0">
+		Formulaire invalide.
+	</div>
+	<div id="popup-confirm" class="fixed top-10 right-28 glass-xl rounded-xl px-6 py-4 opacity-0">
+		Message envoyé !
+	</div>
+	<div id="popup-error" class="fixed top-10 right-80 glass-xl rounded-xl px-6 py-4 opacity-0">
+		Erreur lors de l'envoi.
+	</div>
 
 	<div id="scroll-up" class="fixed bottom-12 right-5 sm:right-12 cursor-pointer hover:scale-110 glass-xl rounded-full p-4 z-10 opacity-0 select-none">
 		<img src="assets/icons/scroll.png" alt="scroll-up" class="w-4">
