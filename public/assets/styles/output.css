@@ -596,8 +596,16 @@ video {
   right: 0.5rem;
 }
 
+.right-28 {
+  right: 7rem;
+}
+
 .right-5 {
   right: 1.25rem;
+}
+
+.right-80 {
+  right: 20rem;
 }
 
 .top-0 {
@@ -614,22 +622,6 @@ video {
 
 .top-4 {
   top: 1rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
-.right-20 {
-  right: 5rem;
-}
-
-.right-28 {
-  right: 7rem;
-}
-
-.right-80 {
-  right: 20rem;
 }
 
 .z-10 {
@@ -948,21 +940,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-green-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-}
-
-.bg-red-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(113 63 18 / var(--tw-bg-opacity));
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -1024,14 +1001,14 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pr-10 {
@@ -1208,10 +1185,6 @@ body {
 }
 
 /* hide scrollbar */
-
-body {
-  scrollbar-width: thin;
-}
 
 body::-webkit-scrollbar {
   width: 0em;
