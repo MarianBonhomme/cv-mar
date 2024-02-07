@@ -95,26 +95,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function displayConfirm() {
-    confirmPopup.classList.remove("opacity-0");
+    confirmPopup.classList.remove("hidden");
 
     setTimeout(() => {
-      confirmPopup.classList.add("opacity-0");
+      confirmPopup.classList.add("hidden");
     }, 5000);
   }
 
   function displayError() {
-    errorPopup.classList.remove("opacity-0");
+    errorPopup.classList.remove("hidden");
 
     setTimeout(() => {
-      errorPopup.classList.add("opacity-0");
+      errorPopup.classList.add("hidden");
     }, 5000);
   }
 
   function displayInvalid() {
-    invalidPopup.classList.remove("opacity-0");
+    invalidPopup.classList.remove("hidden");
 
     setTimeout(() => {
-      invalidPopup.classList.add("opacity-0");
+      invalidPopup.classList.add("hidden");
     }, 3000);
   }
 });
