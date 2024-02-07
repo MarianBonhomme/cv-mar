@@ -648,6 +648,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -851,6 +856,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -885,6 +894,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .self-start {
@@ -1105,6 +1118,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1287,6 +1304,14 @@ body::-webkit-scrollbar-track {
     max-width: 24rem;
   }
 
+  .sm\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .sm\:max-w-3xl {
+    max-width: 48rem;
+  }
+
   .sm\:justify-end {
     justify-content: flex-end;
   }
@@ -1375,6 +1400,10 @@ body::-webkit-scrollbar-track {
     top: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:w-16 {
     width: 4rem;
   }
@@ -1383,8 +1412,21 @@ body::-webkit-scrollbar-track {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
   .md\:p-5 {
     padding: 1.25rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:text-start {
+    text-align: start;
   }
 
   .md\:text-base {
@@ -1424,6 +1466,10 @@ body::-webkit-scrollbar-track {
 
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
@@ -1466,8 +1512,16 @@ body::-webkit-scrollbar-track {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+
   .lg\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .lg\:p-5 {
+    padding: 1.25rem;
   }
 
   .lg\:px-5 {
@@ -1484,6 +1538,10 @@ body::-webkit-scrollbar-track {
     padding-left: 2.5rem;
   }
 
+  .lg\:text-start {
+    text-align: start;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1497,5 +1555,10 @@ body::-webkit-scrollbar-track {
   .lg\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

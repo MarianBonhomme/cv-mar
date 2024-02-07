@@ -32,24 +32,26 @@
 		<img id="close-menu" src="assets/icons/close.svg" alt="close menu" class="absolute top-10 right-10 w-5 cursor-pointer">
 		<ul id="nav-mobile" class="text-xl">
 			<li class="flex items-center cursor-pointer p-3" data-value="home"><img src="assets/icons/home.svg" alt="home" class="w-4 mr-3">Home</li>
-			<li class="flex items-center cursor-pointer p-3" data-value="about"><img src="assets/icons/about.png" alt="home" class="w-4 mr-3">About</li>
-			<li class="flex items-center cursor-pointer p-3" data-value="skills"><img src="assets/icons/skills.png" alt="home" class="w-4 mr-3">Skills</li>
-			<li class="flex items-center cursor-pointer p-3" data-value="resume"><img src="assets/icons/resume.png" alt="home" class="w-4 mr-3">Resume</li>
-			<li class="flex items-center cursor-pointer p-3" data-value="contact"><img src="assets/icons/contact.png" alt="home" class="w-4 mr-3">Contact</li>
+			<li class="flex items-center cursor-pointer p-3" data-value="about"><img src="assets/icons/about.png" alt="about" class="w-4 mr-3">About</li>
+			<li class="flex items-center cursor-pointer p-3" data-value="skills"><img src="assets/icons/skills.png" alt="skills" class="w-4 mr-3">Skills</li>
+			<li class="flex items-center cursor-pointer p-3" data-value="resume"><img src="assets/icons/resume.png" alt="resume" class="w-4 mr-3">Resume</li>
+			<li class="flex items-center cursor-pointer p-3" data-value="contact"><img src="assets/icons/contact.png" alt="contact" class="w-4 mr-3">Contact</li>
+			<a href="https://marianbonhomme.fr" target="_blank"><li class="flex items-center cursor-pointer p-3"><img src="assets/icons/portfolio.png" alt="portfolio" class="w-4 mr-3">Portfolio</li></a>
 		</ul>
 	</div>
 
 	<main class="w-full max-w-8xl glass rounded-xl flex flex-col items-center px-3 sm:px-10">
-		<header class="w-full max-w-8xl flex justify-center mt-5 px-0 sm:px-10 select-none">
+		<header class="w-full max-w-8xl flex justify-center mt-5 px-0 px-sm-5 md:px-10 select-none">
 			<div class="w-full max-w-7xl flex justify-end items-center relative">
 				<img src="assets/imgs/logo.png" alt="logo" class="absolute md:top-0 left-0 w-12 md:w-16">
 				<h1 class="font-poppins text-lg sm:text-xl lg:text-3xl hidden">MARIAN BONHOMME</h1>
-				<ul id="nav" class="hidden sm:flex justify-end text-sm md:text-base">
-					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="home">Home</li>
-					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="about">About</li>
-					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="skills">Skills</li>
-					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="resume">Resume</li>
-					<li class="nav cursor-pointer p-3 md:p-5 transition-all hover:opacity-75" data-value="contact">Contact</li>
+				<ul id="nav" class="hidden sm:flex justify-end text-sm lg:text-base">
+					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75" data-value="home">Home</li>
+					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75" data-value="about">About</li>
+					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75" data-value="skills">Skills</li>
+					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75" data-value="resume">Resume</li>
+					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75" data-value="contact">Contact</li>
+					<a href="https://marianbonhomme.fr" target="_blank"><li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75">Portfolio</li></a>
 				</ul>
 				<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5 cursor-pointer">
 			</div>
@@ -57,12 +59,15 @@
 <!-- Home -->
 		<section id="home" class="w-full max-w-7xl flex relative py-10 sm:py-16 lg:py-20">
 			<div class="grow lg:flex items-center">
-				<div class="w-full lg:w-7/12 mb-10 lg:mb-0 flex sm:block flex-col items-center text-center sm:text-start select-none">
+				<div class="w-full lg:w-7/12 mb-10 lg:mb-0 flex lg:block flex-col items-center text-center lg:text-start select-none">
 					<h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold"><span class="text-7xl sm:text-8xl lg:text-9xl text-primary">H</span>ello and Welcome<span class="text-primary">!</span></h2>
 					<p class="text-xl sm:text-3xl font-medium mt-2 mb-4">I'm <span class="typing"></span></p>
-					<button class="nav button-anim glass-xl rounded-md after:-top-[3px]" data-value="about">Learn More</button>
+					<div class="d-flex items-center gap-3">
+						<button class="nav button-anim glass-xl rounded-md after:-top-[3px]" data-value="about">Learn More</button>
+						<a href="https://marianbonhomme.fr" target="_blank"><button class="nav button-anim glass-xl rounded-md after:-top-[3px]" data-value="about">Visit my Portfolio</button></a>
+					</div>
 				</div>
-				<div class="w-full lg:w-5/12 flex justify-center sm:justify-end">
+				<div class="w-full lg:w-5/12 flex justify-center lg:justify-end">
 					<div class="w-full max-w-xs sm:max-w-sm glass-xl rounded-xl py-5 px-6 sm:py-10 sm:px-14 flex flex-col items-center" data-tilt>
 						<div class="glass-xl rounded-full overflow-hidden select-none">
 							<img src="assets/imgs/pdp-nobg.png" alt="me" class="w-20 sm:w-28">
@@ -70,10 +75,11 @@
 						<h3 class="text-xl sm:text-3xl font-extralight my-3 sm:my-5">Marian Bonhomme</h3>
 						<p class="text-sm">Full-Stack Developer</p>
 						<p class="text-sm">Web and Mobile Developer</p>
-						<div class="grid grid-cols-3 my-5 sm:my-10 select-none">
-							<a href="https://github.com/MarianBonhomme" target="_blank" class="glass-xl rounded-full p-3 mx-3 transition hover:scale-110"><img src="assets/icons/github.png" alt="github" class="w-4 sm:w-6"></a>
+						<div class="grid grid-cols-4 my-5 sm:my-10 select-none">
+							<a href="https://marianbonhomme.fr" target="_blank" class="glass-xl rounded-full p-3 mx-3 transition hover:scale-110"><img src="assets/icons/portfolio.png" alt="portfolio" class="w-4 sm:w-6"></a>
 							<a href="https://www.linkedin.com/in/marian-bonhomme-developpeur-montpellier/" target="_blank" class="glass-xl rounded-full p-3 mx-3 transition hover:scale-110"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-4 sm:w-6"></a>
 							<a href="https://www.instagram.com/marian.bnhm" target="_blank" class="glass-xl rounded-full p-3 mx-3 transition hover:scale-110"><img src="assets/icons/instagram.svg" alt="instagram" class="w-4 sm:w-6"></a>
+							<a href="https://github.com/MarianBonhomme" target="_blank" class="glass-xl rounded-full p-3 mx-3 transition hover:scale-110"><img src="assets/icons/github.png" alt="github" class="w-4 sm:w-6"></a>
 						</div>
 						<div class="self-start text-xs sm:text-sm">
 							<div class="flex items-center mb-1">
@@ -84,9 +90,13 @@
 								<img src="assets/icons/phone.png" alt="phone" class="w-3 mr-3">
 								<span>06 33 63 66 00</span>
 							</div>
-							<div class="flex items-center">
+							<div class="flex items-center mb-1">
 								<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-3">
 								<span>Montpellier - France</span>
+							</div>
+							<div class="flex items-center">
+								<img src="assets/icons/portfolio.png" alt="portfolio" class="w-3 mr-3">
+								<a href="https://marianbonhomme.fr" target="_blank">Portfolio - <span class="underline">marian.bonhomme.fr</span></a>
 							</div>
 						</div>
 					</div>
@@ -104,13 +114,16 @@
 					As a passionnate Full-Stack Developer with 3 years of experience in apprenticeship, focusing on front-end development, I am actively seeking a company 
 					to start my Full-Stack Developer Master's in October 2024.
 				</p>
-				<div class="w-full max-w-2xl sm:flex justify-between glass-xl rounded-xl py-3 px-3 sm:py-7 sm:px-10">
+				<div class="w-full max-w-fit sm:max-w-3xl sm:flex justify-between glass-xl rounded-xl py-3 px-3 sm:py-7 mx-auto sm:px-10">
 					<div class="text-sm">
 						<p class="p-1 sm:p-2"><span class="font-bold">Name : </span>Marian Bonhomme</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Phone : </span>06 33 63 66 00</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Adress : </span>Montpellier</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Mail : </span>marian.bonhomme@gmail.com</p>
-						<button class="nav button-anim glass-xl rounded-md mt-3 hidden sm:inline-block after:top-[6px]" data-value="contact">Contact Me</button>
+						<div class="hidden sm:block mt-3">
+							<button class="nav button-anim glass-xl rounded-md after:top-[6px] mt-1" data-value="contact">Contact Me</button>
+							<a href="https://marianbonhomme.fr" target="_blank"><button class="nav button-anim glass-xl rounded-md after:top-[6px] mt-1">Visit my portfolio</button></a>
+						</div>
 					</div>
 					<div class="text-sm flex flex-col">
 						<p class="p-1 sm:p-2"><span class="font-bold">Age : </span>22</p>
@@ -118,7 +131,10 @@
 						<p class="p-1 sm:p-2"><span class="font-bold">Degree : </span>Bachelor's Full-Stack Developer</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Experience : </span>3 Years</p>
 						<p class="p-1 sm:p-2"><span class="font-bold">Status : </span>Available from October 2024</p>
-						<button class="nav button-anim glass-xl rounded-md max-w-fit mt-3 sm:hidden after:top-[6px]" data-value="contact">Contact Me</button>
+						<div class="d-flex items-center gap-3 sm:hidden mt-3">
+							<button class="nav button-anim glass-xl rounded-md max-w-fit after:top-[6px]" data-value="contact">Contact Me</button>
+							<a href="https://marianbonhomme.fr" target="_blank"><button class="nav button-anim glass-xl rounded-md max-w-fit after:top-[6px]">Visit my portfolio</button></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -323,11 +339,12 @@
 			</div>
 			<div class="w-full lg:w-1/2 flex flex-col items-center mb-10 lg:mb-0 lg:px-5">
 				<h3 class="text-4xl sm:text-5xl font-bold mb-3 select-none"><span class="text-7xl sm:text-8xl text-primary">G</span>et in Touch<span class="hidden sm:inline text-7xl text-primary">.</span></h3>
-				<p class="text-center sm:text-xl mb-3">I welcome direct communication through this form, or feel free to connect with me on my social media platforms.</p>					
-				<div class="w-full flex justify-center gap-5 mb-3 select-none">
-					<a href="https://github.com/MarianBonhomme" target="_blank" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3 transition hover:scale-110"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
+				<p class="text-center sm:text-xl">I welcome direct communication through this form, or feel free to connect with me on my social media platforms.</p>					
+				<div class="w-full flex justify-center gap-5 my-5 select-none">
+					<a href="https://marianbonhomme.fr" target="_blank" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3 transition hover:scale-110"><img src="assets/icons/portfolio.png" alt="portfolio" class="w-6"></a>
 					<a href="https://www.linkedin.com/in/marian-bonhomme-developpeur-montpellier/" target="_blank" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3 transition hover:scale-110"><img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6"></a>
 					<a href="https://www.instagram.com/marian.bnhm" target="_blank" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3 transition hover:scale-110"><img src="assets/icons/instagram.svg" alt="instagram" class="w-6"></a>
+					<a href="https://github.com/MarianBonhomme" target="_blank" class="block sm:self-end max-w-fit glass-xl rounded-full p-3 my-3 transition hover:scale-110"><img src="assets/icons/github.png" alt="github" class="w-6"></a>
 				</div>
 				<div class="flex items-center mb-1">
 					<img src="assets/icons/mail.png" alt="mail" class="w-3 mr-3">
@@ -337,9 +354,13 @@
 					<img src="assets/icons/phone.png" alt="phone" class="w-3 mr-3">
 					<span>06 33 63 66 00</span>
 				</div>
-				<div class="flex items-center">
+				<div class="flex items-center mb-1">
 					<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-3">
 					<span>Montpellier - France</span>
+				</div>
+				<div class="flex items-center">
+					<img src="assets/icons/portfolio.png" alt="portfolio" class="w-3 mr-3">
+					<a href="https://marianbonhomme.fr" target="_blank">Portfolio - <span class="underline">marian.bonhomme.fr</span></a>
 				</div>
 			</div>
 			<div class="w-full flex lg:hidden justify-center">
