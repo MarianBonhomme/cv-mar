@@ -13,9 +13,8 @@
 	<meta property="og:description" content="Welcome to my Resume website ! You will find all informations about me.">
 	<meta property="og:image" content="https://marianbonhomme-resume.netlify.app/assets/imgs/logo.png">
 	<meta property="og:url" content="https://marianbonhomme-resume.netlify.app/">
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel='stylesheet' type='text/css' href='assets/styles/output.css'>	
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
 	<link rel="icon" href="./assets/favicon.png" type="image/png">
 	<script type="text/javascript" src="assets/scripts/loader.js"></script>
 	<script type="text/javascript" src="assets/scripts/scroll.js"></script>
@@ -23,7 +22,6 @@
 	<script type="text/javascript" src="assets/scripts/navigation.js"></script>
 	<script type="text/javascript" src="assets/scripts/theme.js"></script>
 	<script type="text/javascript" src="assets/scripts/email.js"></script>
-	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body class="flex flex-col items-center font-quicksand text-white p-2 sm:p-10 overflow-x-hidden max-w-screen">
@@ -36,7 +34,9 @@
 			<li class="flex items-center cursor-pointer p-3" data-value="skills"><img src="assets/icons/skills.png" alt="skills" class="w-4 mr-3">Skills</li>
 			<li class="flex items-center cursor-pointer p-3" data-value="resume"><img src="assets/icons/resume.png" alt="resume" class="w-4 mr-3">Resume</li>
 			<li class="flex items-center cursor-pointer p-3" data-value="contact"><img src="assets/icons/contact.png" alt="contact" class="w-4 mr-3">Contact</li>
-			<a href="https://marianbonhomme.com" target="_blank"><li class="flex items-center cursor-pointer p-3"><img src="assets/icons/portfolio.png" alt="portfolio" class="w-4 mr-3">Portfolio</li></a>
+			<li class="flex items-center cursor-pointer p-3">
+				<a href="https://marianbonhomme.com" target="_blank"><img src="assets/icons/portfolio.png" alt="portfolio" class="w-4 mr-3">Portfolio</a>
+			</li>
 		</ul>
 	</div>
 
@@ -51,7 +51,7 @@
 					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75" data-value="skills">Skills</li>
 					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75" data-value="resume">Resume</li>
 					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75" data-value="contact">Contact</li>
-					<a href="https://marianbonhomme.com" target="_blank"><li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75">Portfolio</li></a>
+					<li class="nav cursor-pointer p-3 lg:p-5 transition-all hover:opacity-75"><a href="https://marianbonhomme.com" target="_blank">Portfolio</a></li>
 				</ul>
 				<img id="open-menu" src="assets/icons/menu.svg" alt="open menu" class="sm:hidden w-5 cursor-pointer">
 			</div>
@@ -406,32 +406,35 @@
 		<img id="settings-button" src="assets/icons/settings.svg" alt="settings" class="w-6 animate-spin">
 		<div id="settings-dropdown" class="hidden">
 			<div theme="wave" hexa="#664EAC" color="purple" class="color-button mt-4">
-				<img src="assets/icons/theme/wave-purple.png" alt="theme" class="w-6">
+				<img src="assets/icons/theme/wave-purple.png" alt="wave-purple" class="w-6">
 			</div>
 			<div theme="wave" hexa="#D61C46" color="red" class="color-button">
-				<img src="assets/icons/theme/wave-red.png" alt="theme" class="w-6">
+				<img src="assets/icons/theme/wave-red.png" alt="wave-red" class="w-6">
 			</div>
 			<div theme="wave" hexa="#0D8C6A" color="green" class="color-button">
-				<img src="assets/icons/theme/wave-green.png" alt="theme" class="w-6">
+				<img src="assets/icons/theme/wave-green.png" alt="wave-green" class="w-6">
 			</div>
 			<div theme="wave" hexa="#20BDED" color="blue" class="color-button">
-				<img src="assets/icons/theme/wave-blue.png" alt="theme" class="w-6">
+				<img src="assets/icons/theme/wave-blue.png" alt="wave-blue" class="w-6">
 			</div>
 			<div theme="liquid" hexa="#9F4BFF" color="purple" class="color-button mb-2 mt-4">
-				<img src="assets/icons/theme/liquid-purple.png" alt="theme" class="w-6">
+				<img src="assets/icons/theme/liquid-purple.png" alt="liquid-purple" class="w-6">
 			</div>
 			<div theme="liquid" hexa="#F01368" color="red" class="color-button mb-2">
-				<img src="assets/icons/theme/liquid-red.png" alt="theme" class="w-6">
+				<img src="assets/icons/theme/liquid-red.png" alt="liquid-red" class="w-6">
 			</div>
 			<div theme="liquid" hexa="#209073" color="green" class="color-button mb-2">
-				<img src="assets/icons/theme/liquid-green.png" alt="theme" class="w-6">
+				<img src="assets/icons/theme/liquid-green.png" alt="liquid-green" class="w-6">
 			</div>
 			<div theme="liquid" hexa="#07CEFC" color="blue" class="color-button">
-				<img src="assets/icons/theme/liquid-blue.png" alt="theme" class="w-6">
+				<img src="assets/icons/theme/liquid-blue.png" alt="liquid-blue" class="w-6">
 			</div>
 		</div>
 	</div>
 
+	
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	
 </body>
 </html>
