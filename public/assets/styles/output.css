@@ -1280,6 +1280,10 @@ body::-webkit-scrollbar-track {
     margin-top: 0.75rem;
   }
 
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .sm\:block {
     display: block;
   }
